@@ -7,6 +7,10 @@ public class DiceGame {
         System.out.println("Die 1: " + randomnum1);
         System.out.println("Die 2: " + randomnum2);
         System.out.println("Total value: " + total);
+        if (total > 7) {
+            System.out.println("You won!");
+        }
+        else System.out.println("You lost!");
     }
     public static void main(String[] args) {
         new DiceGame().run();
